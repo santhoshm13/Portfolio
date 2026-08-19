@@ -16,8 +16,7 @@ import {
   Layers,
   Zap,
   Bot,
-  CalendarCheck,
-  BellRing,
+  Heart,
   Truck,
   Wrench,
   Fuel,
@@ -311,25 +310,25 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
                     <span className="text-emerald-400">STATUS: PROACTIVE</span>
                   </div>
                   <div className="text-xl sm:text-2xl font-black font-kanit text-white uppercase">
-                    "BOOKING CLINIC APPOINTMENT & LOGGING MEDICATION"
+                    "MENSTRUAL HEALTH & PREGNANCY CARE COMPANION"
                   </div>
                   <p className="text-[11px] text-[#D7E2EA]/60 mt-1 font-mono">
-                    Multi-turn tool orchestration with autonomous reminders and follow-up loops.
+                    Cycle tracking, symptom analysis, and pregnancy wellness guidance powered by agentic AI.
                   </p>
                 </div>
 
                 <div className="grid grid-cols-2 gap-2">
                   <div className="flex items-center justify-between p-2 rounded-lg bg-black/30 border border-[#D7E2EA]/10 text-[11px]">
                     <span className="flex items-center gap-1.5 text-[#D7E2EA]/80">
-                      <CalendarCheck size={13} className="text-rose-400" />
-                      AUTO BOOKING
+                      <Heart size={13} className="text-rose-400" />
+                      CYCLE TRACKING
                     </span>
                     <CheckCircle size={12} className="text-emerald-400" />
                   </div>
                   <div className="flex items-center justify-between p-2 rounded-lg bg-black/30 border border-[#D7E2EA]/10 text-[11px]">
                     <span className="flex items-center gap-1.5 text-[#D7E2EA]/80">
-                      <BellRing size={13} className="text-rose-400" />
-                      FOLLOW-UP LOOP
+                      <Sparkles size={13} className="text-rose-400" />
+                      PREGNANCY CARE
                     </span>
                     <CheckCircle size={12} className="text-emerald-400" />
                   </div>

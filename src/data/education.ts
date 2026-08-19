@@ -17,8 +17,8 @@ export const educationList: EducationItem[] = [
     statusText: "PURSUING",
   },
   {
-    degree: "DIPLOMA IN COMPUTER APPLICATIONS (DCA)",
-    major: "Computer Applications",
+    degree: "DIPLOMA (DCA)",
+    major: "Diploma in Computer Application",
     institution: "Sysoft Institution, Tirupattur",
     period: "6 MONTHS DURATION",
     statusText: "COMPLETED",

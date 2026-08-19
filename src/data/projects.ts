@@ -58,13 +58,13 @@ export const projects: Project[] = [
   {
     number: "03",
     title: "SAKHI",
-    category: "AGENTIC AI • HEALTHCARE ASSISTANT",
+    category: "WOMEN'S HEALTH • AGENTIC AI",
     description:
-      "A health assistant that acts, not just answers. Agentic assistant built on Gemini function-calling — it books, tracks, and follows up rather than terminating at a text response.",
+      "An agentic AI healthcare companion dedicated to women's menstrual healthcare and pregnancy care. Built on Gemini function-calling to proactively track cycles, monitor pregnancy wellness, and provide personalized health guidance.",
     highlights: [
       "Built at the Vibe2Vision hackathon with team FAB4.",
-      "Leverages Gemini function-calling for automated tool invocation, appointment booking, and persistent health metrics tracking.",
-      "Engineered proactive agentic workflows that schedule medication reminders and autonomously initiate patient follow-ups.",
+      "Leverages Gemini function-calling for automated cycle tracking, symptom logging, and pregnancy milestone guidance.",
+      "Engineered proactive agentic workflows for personalized maternal health alerts, wellness reminders, and health insights.",
     ],
     technologies: [
       "Gemini Function Calling",

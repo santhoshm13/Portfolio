@@ -47,9 +47,7 @@ export const Hero: React.FC = () => {
           <span>COMPUTER SCIENCE ENGINEERING • FULL-STACK • ML</span>
         </div>
         <div className="flex items-center gap-4 text-xs">
-          <span>BASED IN CHENNAI, INDIA</span>
-          <span className="hidden sm:inline text-[#D7E2EA]/30">•</span>
-          <span className="hidden sm:inline">2025 — 2029</span>
+          <span>2025 — 2029</span>
         </div>
       </motion.div>
 
