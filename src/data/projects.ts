@@ -14,6 +14,29 @@ export interface Project {
 export const projects: Project[] = [
   {
     number: "01",
+    title: "DATAGENIE",
+    category: "AI & DATA ANALYTICS • WEB PLATFORM",
+    description:
+      "An intelligent AI-powered data assistant and analytics application designed to analyze, transform, and extract actionable insights from data seamlessly.",
+    highlights: [
+      "Built an interactive web platform for automated data exploration and intelligent AI generation.",
+      "Integrated responsive UI analytics dashboards, prompt-driven dataset operations, and clean export workflows.",
+      "Deployed live on Vercel with high responsiveness, clean UI, and fast asset delivery.",
+    ],
+    technologies: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vercel",
+      "AI & Data APIs",
+      "REST APIs",
+    ],
+    liveUrl: "https://datagenie-eight.vercel.app/",
+    githubUrl: "https://github.com/santhoshm13",
+    accentColor: "#818cf8",
+  },
+  {
+    number: "02",
     title: "COGNIVUE",
     category: "AI / LLM • PRODUCT DATA ENRICHMENT PLATFORM",
     description:
@@ -39,7 +62,7 @@ export const projects: Project[] = [
     accentColor: "#a855f7",
   },
   {
-    number: "02",
+    number: "03",
     title: "QUEUE CURE '26",
     category: "HEALTHCARE • REAL-TIME SYSTEM",
     description:
@@ -55,7 +78,7 @@ export const projects: Project[] = [
     accentColor: "#38bdf8",
   },
   {
-    number: "03",
+    number: "04",
     title: "CIVICONNECT",
     category: "CIVIC TECH • AI",
     description:
@@ -82,7 +105,7 @@ export const projects: Project[] = [
     accentColor: "#34d399",
   },
   {
-    number: "04",
+    number: "05",
     title: "SAKHI",
     category: "WOMEN'S HEALTH • AGENTIC AI",
     description:
@@ -106,7 +129,7 @@ export const projects: Project[] = [
     accentColor: "#f43f5e",
   },
   {
-    number: "05",
+    number: "06",
     title: "FLEETX",
     category: "LOGISTICS • TRANSPORT OPERATIONS PLATFORM",
     description:
@@ -128,29 +151,6 @@ export const projects: Project[] = [
     liveUrl: null,
     githubUrl: "https://github.com/balajisabk32-cmd/FleetX",
     accentColor: "#06b6d4",
-  },
-  {
-    number: "06",
-    title: "DATAGENIE",
-    category: "AI & DATA ANALYTICS • WEB PLATFORM",
-    description:
-      "An intelligent AI-powered data assistant and analytics application designed to analyze, transform, and extract actionable insights from data seamlessly.",
-    highlights: [
-      "Built an interactive web platform for automated data exploration and intelligent AI generation.",
-      "Integrated responsive UI analytics dashboards, prompt-driven dataset operations, and clean export workflows.",
-      "Deployed live on Vercel with high responsiveness, clean UI, and fast asset delivery.",
-    ],
-    technologies: [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Vercel",
-      "AI & Data APIs",
-      "REST APIs",
-    ],
-    liveUrl: "https://datagenie-eight.vercel.app/",
-    githubUrl: "https://github.com/santhoshm13",
-    accentColor: "#818cf8",
   },
   {
     number: "07",

@@ -74,7 +74,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
 
             {project.statusText ? (
               <span className={`px-3 py-1 rounded-full text-[11px] font-mono tracking-widest uppercase border ${
-                project.number === '04'
+                project.number === '05'
                   ? 'bg-rose-500/10 text-rose-300 border-rose-500/30'
                   : 'bg-amber-500/10 text-amber-300 border-amber-500/30'
               }`}>
@@ -171,8 +171,58 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
 
           {/* Right Column: Abstract Interactive UI Preview Card */}
           <div className="lg:col-span-6 w-full rounded-2xl bg-[#141414] border border-[#D7E2EA]/15 p-5 sm:p-6 flex flex-col justify-between relative overflow-hidden">
-            {/* Project 01: Cognivue Abstract UI */}
+            {/* Project 01: DataGenie Abstract UI */}
             {project.number === '01' && (
+              <div className="flex flex-col h-full justify-between gap-4 font-mono text-xs">
+                <div className="flex items-center justify-between border-b border-[#D7E2EA]/10 pb-3">
+                  <div className="flex items-center gap-2 text-indigo-400 font-semibold">
+                    <Zap size={14} className="animate-pulse" />
+                    <span>AI DATA ASSISTANT & ANALYTICS</span>
+                  </div>
+                  <span className="text-indigo-400/80">LIVE ON VERCEL</span>
+                </div>
+
+                <div className="p-4 rounded-xl bg-black/40 border border-indigo-500/30">
+                  <div className="flex items-center justify-between text-[10px] text-indigo-400 uppercase tracking-wider mb-1">
+                    <span className="flex items-center gap-1">
+                      <Sparkles size={12} /> INTELLIGENT WORKFLOW ENGINE
+                    </span>
+                    <span className="text-emerald-400">READY</span>
+                  </div>
+                  <div className="text-xl sm:text-2xl font-black font-kanit text-white uppercase">
+                    PROMPT-DRIVEN DATASET OPERATIONS
+                  </div>
+                  <p className="text-[11px] text-[#D7E2EA]/60 mt-1 font-mono">
+                    Automated exploratory data analysis, visual summaries, and export tools.
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-2 gap-2">
+                  <div className="flex items-center justify-between p-2 rounded-lg bg-black/30 border border-[#D7E2EA]/10 text-[11px]">
+                    <span className="flex items-center gap-1.5 text-[#D7E2EA]/80">
+                      <Database size={13} className="text-indigo-400" />
+                      DATASET IMPORT
+                    </span>
+                    <CheckCircle size={12} className="text-emerald-400" />
+                  </div>
+                  <div className="flex items-center justify-between p-2 rounded-lg bg-black/30 border border-[#D7E2EA]/10 text-[11px]">
+                    <span className="flex items-center gap-1.5 text-[#D7E2EA]/80">
+                      <Layers size={13} className="text-indigo-400" />
+                      INSIGHT GENERATION
+                    </span>
+                    <CheckCircle size={12} className="text-emerald-400" />
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-between text-[11px] text-[#D7E2EA]/50 pt-2 border-t border-[#D7E2EA]/10">
+                  <span>DEPLOYED: VERCEL APP</span>
+                  <span>REACT + TAILWIND</span>
+                </div>
+              </div>
+            )}
+
+            {/* Project 02: Cognivue Abstract UI */}
+            {project.number === '02' && (
               <div className="flex flex-col h-full justify-between gap-4 font-mono text-xs">
                 <div className="flex items-center justify-between border-b border-[#D7E2EA]/10 pb-3">
                   <div className="flex items-center gap-2 text-purple-400 font-semibold">
@@ -217,8 +267,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
               </div>
             )}
 
-            {/* Project 02: Queue Cure '26 Abstract UI */}
-            {project.number === '02' && (
+            {/* Project 03: Queue Cure '26 Abstract UI */}
+            {project.number === '03' && (
               <div className="flex flex-col h-full justify-between gap-4 font-mono text-xs">
                 <div className="flex items-center justify-between border-b border-[#D7E2EA]/10 pb-3">
                   <div className="flex items-center gap-2 text-emerald-400 font-semibold">
@@ -287,8 +337,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
               </div>
             )}
 
-            {/* Project 03: CiviConnect Abstract UI */}
-            {project.number === '03' && (
+            {/* Project 04: CiviConnect Abstract UI */}
+            {project.number === '04' && (
               <div className="flex flex-col h-full justify-between gap-4 font-mono text-xs">
                 <div className="flex items-center justify-between border-b border-[#D7E2EA]/10 pb-3">
                   <div className="flex items-center gap-2 text-emerald-400 font-semibold">
@@ -341,8 +391,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
               </div>
             )}
 
-            {/* Project 04: SAKHI Abstract UI */}
-            {project.number === '04' && (
+            {/* Project 05: SAKHI Abstract UI */}
+            {project.number === '05' && (
               <div className="flex flex-col h-full justify-between gap-4 font-mono text-xs">
                 <div className="flex items-center justify-between border-b border-[#D7E2EA]/10 pb-3">
                   <div className="flex items-center gap-2 text-rose-400 font-semibold">
@@ -389,8 +439,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
               </div>
             )}
 
-            {/* Project 05: FleetX Abstract UI */}
-            {project.number === '05' && (
+            {/* Project 06: FleetX Abstract UI */}
+            {project.number === '06' && (
               <div className="flex flex-col h-full justify-between gap-4 font-mono text-xs">
                 <div className="flex items-center justify-between border-b border-[#D7E2EA]/10 pb-3">
                   <div className="flex items-center gap-2 text-cyan-400 font-semibold">
@@ -434,56 +484,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
                 <div className="flex items-center justify-between text-[11px] text-[#D7E2EA]/50 pt-2 border-t border-[#D7E2EA]/10">
                   <span>CENTRALIZED DB</span>
                   <span>REACT + NODE + EXPRESS</span>
-                </div>
-              </div>
-            )}
-
-            {/* Project 06: DataGenie Abstract UI */}
-            {project.number === '06' && (
-              <div className="flex flex-col h-full justify-between gap-4 font-mono text-xs">
-                <div className="flex items-center justify-between border-b border-[#D7E2EA]/10 pb-3">
-                  <div className="flex items-center gap-2 text-indigo-400 font-semibold">
-                    <Zap size={14} className="animate-pulse" />
-                    <span>AI DATA ASSISTANT & ANALYTICS</span>
-                  </div>
-                  <span className="text-indigo-400/80">LIVE ON VERCEL</span>
-                </div>
-
-                <div className="p-4 rounded-xl bg-black/40 border border-indigo-500/30">
-                  <div className="flex items-center justify-between text-[10px] text-indigo-400 uppercase tracking-wider mb-1">
-                    <span className="flex items-center gap-1">
-                      <Sparkles size={12} /> INTELLIGENT WORKFLOW ENGINE
-                    </span>
-                    <span className="text-emerald-400">READY</span>
-                  </div>
-                  <div className="text-xl sm:text-2xl font-black font-kanit text-white uppercase">
-                    PROMPT-DRIVEN DATASET OPERATIONS
-                  </div>
-                  <p className="text-[11px] text-[#D7E2EA]/60 mt-1 font-mono">
-                    Automated exploratory data analysis, visual summaries, and export tools.
-                  </p>
-                </div>
-
-                <div className="grid grid-cols-2 gap-2">
-                  <div className="flex items-center justify-between p-2 rounded-lg bg-black/30 border border-[#D7E2EA]/10 text-[11px]">
-                    <span className="flex items-center gap-1.5 text-[#D7E2EA]/80">
-                      <Database size={13} className="text-indigo-400" />
-                      DATASET IMPORT
-                    </span>
-                    <CheckCircle size={12} className="text-emerald-400" />
-                  </div>
-                  <div className="flex items-center justify-between p-2 rounded-lg bg-black/30 border border-[#D7E2EA]/10 text-[11px]">
-                    <span className="flex items-center gap-1.5 text-[#D7E2EA]/80">
-                      <Layers size={13} className="text-indigo-400" />
-                      INSIGHT GENERATION
-                    </span>
-                    <CheckCircle size={12} className="text-emerald-400" />
-                  </div>
-                </div>
-
-                <div className="flex items-center justify-between text-[11px] text-[#D7E2EA]/50 pt-2 border-t border-[#D7E2EA]/10">
-                  <span>DEPLOYED: VERCEL APP</span>
-                  <span>REACT + TAILWIND</span>
                 </div>
               </div>
             )}
