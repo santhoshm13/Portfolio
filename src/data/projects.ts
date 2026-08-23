@@ -14,6 +14,32 @@ export interface Project {
 export const projects: Project[] = [
   {
     number: "01",
+    title: "COGNIVUE",
+    category: "AI / LLM • PRODUCT DATA ENRICHMENT PLATFORM",
+    description:
+      "Cognivue is an AI-powered product data enrichment platform designed to transform raw product catalog data into structured, validated, and enriched product information.",
+    highlights: [
+      "Automates product classification, brand and manufacturer matching, attribute extraction, and LOV/UOM validation.",
+      "Calculates data confidence scoring, generates AI marketing copy, and exports standardized 252-column CSV/Excel catalog datasets.",
+      "Built with a high-performance FastAPI/Python backend, Supabase PostgreSQL database, and reactive React + TypeScript frontend.",
+    ],
+    technologies: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "FastAPI",
+      "Python",
+      "PostgreSQL",
+      "Supabase",
+      "AI/LLM Services",
+      "Tailwind CSS",
+    ],
+    liveUrl: "https://cognivue-1.onrender.com/",
+    githubUrl: "https://github.com/santhoshm13/cognivue",
+    accentColor: "#a855f7",
+  },
+  {
+    number: "02",
     title: "QUEUE CURE '26",
     category: "HEALTHCARE • REAL-TIME SYSTEM",
     description:
@@ -29,7 +55,7 @@ export const projects: Project[] = [
     accentColor: "#38bdf8",
   },
   {
-    number: "02",
+    number: "03",
     title: "CIVICONNECT",
     category: "CIVIC TECH • AI",
     description:
@@ -56,7 +82,7 @@ export const projects: Project[] = [
     accentColor: "#34d399",
   },
   {
-    number: "03",
+    number: "04",
     title: "SAKHI",
     category: "WOMEN'S HEALTH • AGENTIC AI",
     description:
@@ -80,7 +106,7 @@ export const projects: Project[] = [
     accentColor: "#f43f5e",
   },
   {
-    number: "04",
+    number: "05",
     title: "FLEETX",
     category: "LOGISTICS • TRANSPORT OPERATIONS PLATFORM",
     description:
@@ -104,7 +130,7 @@ export const projects: Project[] = [
     accentColor: "#06b6d4",
   },
   {
-    number: "05",
+    number: "06",
     title: "DATAGENIE",
     category: "AI & DATA ANALYTICS • WEB PLATFORM",
     description:
@@ -127,7 +153,7 @@ export const projects: Project[] = [
     accentColor: "#818cf8",
   },
   {
-    number: "06",
+    number: "07",
     title: "TN TOURISM",
     category: "TOURISM • JAVA FULL STACK",
     description:
