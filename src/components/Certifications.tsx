@@ -1,7 +1,7 @@
 import React from 'react';
 import { certifications } from '../data/certifications';
 import { FadeIn } from './FadeIn';
-import { Award, ShieldCheck } from 'lucide-react';
+import { Award, ShieldCheck, Calendar, User } from 'lucide-react';
 
 export const Certifications: React.FC = () => {
   return (
@@ -51,9 +51,25 @@ export const Certifications: React.FC = () => {
                   {cert.title}
                 </h3>
 
-                <p className="text-xs sm:text-sm font-mono text-[#BBCCD7] uppercase tracking-wider mb-6">
+                <p className="text-xs sm:text-sm font-mono text-[#BBCCD7] uppercase tracking-wider mb-4">
                   {cert.issuer}
                 </p>
+
+                {/* Additional Metadata: Date & Recipient */}
+                <div className="space-y-1.5 mb-6 text-[11px] font-mono text-[#D7E2EA]/60">
+                  {cert.date && (
+                    <div className="flex items-center gap-1.5">
+                      <Calendar size={12} className="text-[#BBCCD7]" />
+                      <span>ISSUED: {cert.date}</span>
+                    </div>
+                  )}
+                  {cert.recipient && (
+                    <div className="flex items-center gap-1.5">
+                      <User size={12} className="text-[#BBCCD7]" />
+                      <span>RECIPIENT: {cert.recipient}</span>
+                    </div>
+                  )}
+                </div>
               </div>
 
               <div className="pt-4 border-t border-[#D7E2EA]/10 flex items-center justify-between text-xs font-mono text-[#D7E2EA]/50 uppercase">
