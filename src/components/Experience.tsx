@@ -1,7 +1,7 @@
 import React from 'react';
 import { experiences } from '../data/experience';
 import { FadeIn } from './FadeIn';
-import { Briefcase, Calendar, Clock, CheckCircle2 } from 'lucide-react';
+import { Briefcase, Calendar, Clock, CheckCircle2, MapPin, ExternalLink } from 'lucide-react';
 
 export const Experience: React.FC = () => {
   return (
@@ -40,8 +40,10 @@ export const Experience: React.FC = () => {
             <FadeIn key={idx} delay={0.2}>
               <div className="relative md:pl-20 group">
                 {/* Timeline node icon on desktop */}
-                <div className="hidden md:flex absolute left-5 top-8 -translate-x-1/2 w-7 h-7 rounded-full bg-[#0C0C0C] border-2 border-[#D7E2EA] items-center justify-center group-hover:scale-125 transition-transform duration-300 shadow-lg shadow-white/10 z-10">
-                  <div className="w-2 h-2 rounded-full bg-[#D7E2EA]" />
+                <div className={`hidden md:flex absolute left-5 top-8 -translate-x-1/2 w-7 h-7 rounded-full bg-[#0C0C0C] border-2 ${
+                  exp.isCurrent ? 'border-emerald-400 shadow-emerald-400/20' : 'border-[#D7E2EA] shadow-white/10'
+                } items-center justify-center group-hover:scale-125 transition-transform duration-300 shadow-lg z-10`}>
+                  <div className={`w-2 h-2 rounded-full ${exp.isCurrent ? 'bg-emerald-400 animate-pulse' : 'bg-[#D7E2EA]'}`} />
                 </div>
 
                 {/* Experience Content Box */}
@@ -52,24 +54,56 @@ export const Experience: React.FC = () => {
                   {/* Header Row */}
                   <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-[#D7E2EA]/10 pb-6 mb-6">
                     <div>
-                      <div className="flex items-center gap-2 text-xs font-mono text-[#BBCCD7] uppercase tracking-widest mb-1">
-                        <Briefcase size={14} />
-                        <span>{exp.organization}</span>
+                      <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-mono text-[#BBCCD7] uppercase tracking-widest mb-1.5">
+                        <div className="flex items-center gap-1.5">
+                          <Briefcase size={14} className="text-[#BBCCD7] shrink-0" />
+                          {exp.companyUrl ? (
+                            <a
+                              href={exp.companyUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1.5 text-[#D7E2EA] hover:text-white transition-colors underline-offset-4 hover:underline group/link"
+                              title={`Visit ${exp.organization}`}
+                            >
+                              <span>{exp.organization}</span>
+                              <ExternalLink size={12} className="text-[#BBCCD7] group-hover/link:text-white transition-colors shrink-0" />
+                            </a>
+                          ) : (
+                            <span>{exp.organization}</span>
+                          )}
+                        </div>
+                        {exp.location && (
+                          <>
+                            <span className="text-[#D7E2EA]/30 hidden sm:inline">•</span>
+                            <div className="flex items-center gap-1 text-[#D7E2EA]/60 normal-case font-mono text-xs">
+                              <MapPin size={13} className="text-[#BBCCD7] shrink-0" />
+                              <span>{exp.location}</span>
+                            </div>
+                          </>
+                        )}
                       </div>
                       <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold font-kanit uppercase tracking-tight text-[#D7E2EA]">
                         {exp.role}
                       </h3>
                     </div>
 
-                    <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-[#D7E2EA]/70">
+                    <div className="flex flex-wrap items-center gap-2.5 text-xs font-mono text-[#D7E2EA]/70">
+                      {exp.isCurrent && (
+                        <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 text-[11px] font-mono tracking-widest uppercase shadow-[0_0_12px_rgba(52,211,153,0.15)]">
+                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                          <span>CURRENTLY WORKING</span>
+                        </div>
+                      )}
                       <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/[0.05] border border-[#D7E2EA]/10">
                         <Calendar size={13} />
                         <span>{exp.period}</span>
                       </div>
-                      <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/[0.05] border border-[#D7E2EA]/10">
-                        <Clock size={13} />
-                        <span>{exp.duration}</span>
-                      </div>
+                      {exp.duration && exp.duration !== exp.period && (
+                        <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/[0.05] border border-[#D7E2EA]/10">
+                          <Clock size={13} />
+                          <span>{exp.duration}</span>
+                        </div>
+                      )}
                     </div>
                   </div>
 

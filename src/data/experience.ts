@@ -1,8 +1,11 @@
 export interface Experience {
   role: string;
   organization: string;
+  companyUrl?: string;
+  location?: string;
   period: string;
-  duration: string;
+  duration?: string;
+  isCurrent?: boolean;
   domain: string;
   technologies: string[];
   description: string;
@@ -10,20 +13,20 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    role: "GOOGLE AI-ML VIRTUAL INTERN",
-    organization: "AICTE – EduSkills Academy",
-    period: "October 2025 — December 2025",
-    duration: "10-week virtual internship",
-    domain: "Python Full Stack Development",
+    role: "FULL STACK DEVELOPMENT INTERN",
+    organization: "Cloudstier Solutions Pvt. Ltd.",
+    companyUrl: "https://www.cloudstier.com/",
+    location: "Tirupattur, Tamil Nadu, India",
+    period: "Present",
+    isCurrent: true,
+    domain: "Full Stack Development",
     technologies: [
-      "Python",
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Git",
-      "Web Development",
+      "Frontend Development",
+      "Backend Development",
+      "Web Applications",
+      "Software Workflows",
     ],
     description:
-      "Completed a 10-week virtual internship focused on Python Full Stack Development through AICTE and EduSkills Academy, gaining practical experience in frontend and backend development, debugging, problem solving, and end-to-end web application development.",
+      "Currently working as a Full Stack Development Intern at Cloudstier Solutions, gaining practical industry experience in frontend and backend development, building web applications, and understanding real-world software development workflows.",
   },
 ];
